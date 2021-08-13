@@ -25,10 +25,20 @@ namespace Metoder_opgave_9
                     if (userNumbers[i] == lottoVinderTal[i])
                         sammeTal++;
                 }
-                if (sammeTal >= 2)
-                    Console.WriteLine("Congratz you've won!");
-                else
+                if (sammeTal < 2)
                     Console.WriteLine("You didn't win this time.. Better luck next time!");
+                else if (sammeTal == 2)
+                    Console.WriteLine("Congratz you've won 50$!");
+                else if (sammeTal == 3)
+                    Console.WriteLine("Congratz you've won 100$!");
+                else if (sammeTal == 4)
+                    Console.WriteLine("Congratz you've won 150$!");
+                else if (sammeTal == 5)
+                    Console.WriteLine("Congratz you've won 200$!");
+                else if (sammeTal == 6)
+                    Console.WriteLine("Congratz you've won 250$!");
+                else
+                    Console.WriteLine("Congratz you've won 500$!");
             }
         }
         public static int[] InsertNumbers(int[] a)
